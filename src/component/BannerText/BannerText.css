@@ -1,0 +1,52 @@
+.caption h6 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 11px 0;
+}
+
+.caption p {
+    padding: 11px 0;
+    font-weight: 400;
+}
+
+
+.caption button {
+    padding: 20px 55px;
+    font-size: 18px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    overflow: hidden;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: none;
+    margin: 10px 0;
+    border-radius: 100px;
+}
+
+button.carousel-control-next {
+    display: none;
+}
+
+.caption button:before {
+	font-family: FontAwesome;
+	content:"\f0f0";
+	position: absolute;
+	top: 18px;
+	left: -22px;
+	transition: all 200ms ease-in-out;
+}
+
+.caption button:hover:before {
+	left: 29px;
+}
+
+.caption button:hover {
+ color: #fff!important;
+ border: 2px solid #E73A3E!important;
+ background: #E73A3E}
+
+ button.carousel-control-prev {
+    display: none;
+}
