@@ -1,0 +1,86 @@
+.review-caption h6 {
+    text-align: center;
+    color: #FF4F5A;
+    font-weight: 500;
+}
+
+.review-caption{
+   padding-bottom: 40px ;
+}
+
+.review-caption h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+
+.review-caption p {
+    text-align: center;
+    width: 67%;
+    margin: 0 auto;
+    line-height: 2.0rem;
+    color: #767676;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    .comment-div {
+      width: 100%;
+    }
+    .image-div {
+      width: 100%;
+    }
+    .main-slider {
+      display: inline-block !important;
+      justify-content: space-between;
+      padding: 30px
+    }
+    .image-div img {
+      width: 100%;
+      margin-top: 40px;
+    }
+   
+  }
+@media only screen and (max-width: 770px) {
+    .need-margin {
+        margin-top: 992px!important;
+    }
+    .review-caption p {
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 2.0rem;
+        color: #767676;
+        padding: 0 10px;
+    }
+    .comment-div p {
+        text-align: left;
+        width: 174%!important;
+        font-size: 20px;
+        color: black;
+        line-height: 2.1rem;
+        padding-bottom: 24px;
+        padding: 0 20px;
+    }
+    .image-div img {
+        height: 100%;
+        padding-left: 67px;
+        border-radius: 100px;
+    }
+    .comment-div h5 {
+        padding: 0 20px;
+    }
+    .comment-div span {
+        display: block;
+        font-size: 14px;
+        color: #767676;
+        padding: 0 20px;
+    }
+    .slick-slide img {
+        display: block;
+        padding: 0 68px;
+    }
+  }
