@@ -1,13 +1,14 @@
 import React from "react";
-
+import videoOne from "../../../video/production ID_4487290.mp4";
+import AppointmentText from "../AppointmentText/AppointmentText";
 const AppoinmentBanner = () => {
   return (
     <>
       <div className="video-section">
-        <video src={video1} muted loop autoPlay></video>
+        <video src={videoOne} muted loop autoPlay></video>
         <div className="video-overly"></div>
         <div className="text container mt-5 animate__animated animate__fadeInLeft">
-          <BannerText></BannerText>
+          <AppointmentText></AppointmentText>
         </div>
       </div>
     </>
