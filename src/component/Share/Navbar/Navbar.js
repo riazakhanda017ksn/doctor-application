@@ -2,7 +2,6 @@ import { faPhone, faSearch, faUserMd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../src/Images/doctor.png";
 import "./Navbar.css";
 
 const Navbar = () => {

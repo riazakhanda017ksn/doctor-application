@@ -10,7 +10,7 @@ const AppointmentText = () => {
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div className="container">
+          <div className="container mt-5">
             <div className="row">
               <div className="col-lg-8">
                 <div className="caption animate__animated animate__fadeInLeft">
