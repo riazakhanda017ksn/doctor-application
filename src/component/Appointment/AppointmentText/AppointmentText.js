@@ -32,29 +32,6 @@ const AppointmentText = () => {
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8">
-                <div className="caption animate__animated animate__fadeInLeft animate__delay-1s">
-                  <h6>Welcome to our Doctor Portal </h6>
-                  <h1>Best Care & Better Doctor Here For Your Treatment </h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptatibus consequatur sed deserunt deleniti excepturi
-                    nobis ducimus ut aperiam, soluta culpa odio amet ? <br /> Id
-                    unde recusandae consectetur.
-                  </p>
-                  <Link to="/">
-                    {" "}
-                    <button>Read More </button>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-4"></div>
-            </div>
-          </div>
-        </div>
       </div>
       <button
         class="carousel-control-prev"

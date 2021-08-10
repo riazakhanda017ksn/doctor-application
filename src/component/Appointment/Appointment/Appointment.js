@@ -5,6 +5,7 @@ import AppoinmentBanner from "../AppoinmentBanner/AppoinmentBanner";
 import AppointmentWithCalender from "../AppointmentWithCalender/AppointmentWithCalender";
 import "react-calendar/dist/Calendar.css";
 import "./Appointment.css";
+import BookingAppointment from "../BookingAppointment/BookingAppointment";
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const handleDateChange = (date) => {
@@ -52,6 +53,7 @@ const Appointment = () => {
       <AppointmentWithCalender
         handleDateChange={handleDateChange}
       ></AppointmentWithCalender>
+      <BookingAppointment date={selectedDate}></BookingAppointment>
       <Footer></Footer>
     </div>
   );

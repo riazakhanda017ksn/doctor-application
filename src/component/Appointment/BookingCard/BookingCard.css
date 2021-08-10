@@ -1,0 +1,25 @@
+.img-customize img {
+    height: 210px!important;
+}
+
+.img-customize span {
+    display: block;
+    text-align: center;
+    color: #f13f3f;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.img-customize small {
+    display: block;
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+    color: #767676;
+    font-weight: 400;
+}
+
+.marginBottom {
+    margin-bottom: 120px;
+}
