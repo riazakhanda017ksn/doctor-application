@@ -1,0 +1,98 @@
+.ReactModal__Content.ReactModal__Content--after-open {
+    width: 53%;
+    border: none!important;
+    box-shadow: 0px 5px 10px 10px #c4a5a526;
+    text-align: center;
+    padding: 45px 20px!important;
+    overflow: hidden!important;
+    position: relative!important;
+    top: 330px!important;
+}
+.ReactModal__Content.ReactModal__Content--after-open h4 {
+    font-size: 16px;
+    color: #676565;
+}
+
+button.customization-button {
+    background: none;
+    border: none;
+    color: red;
+    position: relative;
+    bottom: 11px!important;
+    font-size: 20px!important;
+    left: 47%!important;
+}
+.modal-form input {
+    display: block;
+    width: 80%;
+    margin: 24px auto;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #828282!important;
+    color: #767676;
+    border-radius: 7px!important;
+}
+select.form-select {
+    width: 80%;
+    margin: 21px auto;
+    outline: none!important;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #828282!important;
+    color: #767676;
+    border-radius: 7px;
+}
+select.form-select:focus {
+    
+    border: 1px solid #ff2323!important;
+    box-shadow: none;
+ 
+}
+
+.button-align button {
+    margin: 6px 0;
+    border: none;
+    padding: 16px 74px;
+    color: #FFF;
+    background: linear-gradient(45deg, #ff3b3b, #ff461dcf);
+    border: 2px solid #ffffff;
+    transition: .3s ease-in-out;
+    border-radius: 7px;
+    
+}
+.button-align button:hover {
+   
+    color: #ff3b3b;
+    border: 2px solid #ff3b3b;
+    background: none;
+  
+    
+}
+
+.button-align {
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+}
+.modal-form input:focus{
+    display: block;
+    width: 80%;
+    margin: 21px auto;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #ff1f1f!important;
+}
+.ReactModal__Content.ReactModal__Content--after-open h4 {
+    font-size: 21px;
+    color: #676565;
+    margin-bottom: 20px;
+    position: relative;
+    top: 35px;
+}
+
+
+/* /// */
+
+/* @media only screen and (min-width: 990px)  {
+   
+} */

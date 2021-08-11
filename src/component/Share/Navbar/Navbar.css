@@ -144,7 +144,100 @@ ul.our-primary-menu li ul li a {
   align-items: center;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 500px) {
+
+  .ReactModal__Content.ReactModal__Content--after-open {
+    width: 100%;
+    border: none!important;
+    box-shadow: 0px 5px 10px 10px #c4a5a526;
+    text-align: center;
+    padding: 60px 20px!important;
+    overflow: hidden!important;
+    position: relative!important;
+    top: 330px!important;
+}
+.ReactModal__Content.ReactModal__Content--after-open h4 {
+  font-size: 20px;
+  color: #676565;
+  margin-bottom: 20px;
+  position: relative;
+  top: 48px;
+  line-height: 32px;
+  padding-top: 50px;
+}
+button.customization-button {
+  background: none;
+  border: none;
+  color: red;
+  position: relative;
+  bottom: 70px!important;
+  font-size: 20px;
+  left: 48%!important;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open h4 {
+  font-size: 21px;
+  color: #676565;
+  margin-bottom: 20px;
+  position: relative;
+  top: 56px!important;
+}
+.button-align button {
+  margin: 6px 0;
+  border: none;
+  padding: 16px 74px;
+  color: #FFF;
+  background: linear-gradient(45deg, #ff3b3b, #ff461dcf);
+  border: 2px solid #ffffff;
+  transition: .3s ease-in-out;
+  position: relative;
+  bottom: 13px;
+}
+}
+@media only screen and (max-width: 490px) {
+  button.customization-button {
+    background: none!important;
+    border: none!important;
+    color: red!important;
+    position: relative!important;
+    transform: translate(-6px, -49px)!important;
+}
+}
 @media only screen and (max-width: 990px) {
+  button.customization-button {
+    background: none;
+    border: none;
+    color: red;
+    position: relative;
+    bottom: 20px!important;
+    font-size: 20px;
+    left: 47%;
+}
+  .button-align {
+    text-align: right!important;
+    width: 100%!important;
+    margin: 0 auto!important;
+}
+  .ReactModal__Content.ReactModal__Content--after-open {
+    width: 100%!important;
+    border: none!important;
+    box-shadow: 0px 5px 10px 10px #c4a5a526;
+    text-align: center;
+    padding: 45px 20px!important;
+    overflow: hidden!important;
+    position: relative!important;
+    top: 330px!important;
+}
+  .ReactModal__Content.ReactModal__Content--after-open h4 {
+    font-size: 20px;
+    color: #676565;
+    margin-bottom: 20px;
+    position: relative;
+    top: 48px;
+    line-height: 32px;
+    padding-top: 50px;
+}
+
   .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -163,6 +256,48 @@ ul.our-primary-menu li ul li a {
   }
 
   p{width: 100%;}
+
+  select.form-select {
+    width: 100%!important;
+    margin: 21px auto;
+    outline: none!important;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #828282!important;
+    color: #767676;
+    border-radius: 0px!important;
+}
+.modal-form input {
+    display: block;
+    width: 100%!important;
+    margin: 24px auto;
+    padding: 11px;
+    outline: none;
+    border: 1px solid #828282!important;
+    color: #767676;
+}
+.ReactModal__Content.ReactModal__Content--after-open h4 {
+  font-size: 20px;
+  color: #676565;
+  margin-bottom: 20px;
+  position: relative;
+  top: 48px;
+  line-height: 32px;
+}
+.button-align {
+  text-align: right;
+  width: 100%;
+  margin: 0 auto;
+}
+.button-align button {
+  margin: 6px 0;
+  padding: 10px 47px;
+  color: #FFF;
+  background: linear-gradient(45deg, #ff3b3b, #ff461dcf);
+  border: 2px solid #ffffff;
+  transition: .3s ease-in-out;
+}
+
 }
 .navbar-collapse {
   flex-basis: 100%;

@@ -61,7 +61,7 @@ const BookingAppointment = ({ date }) => {
   ];
   return (
     <section className="mb-5">
-      <div className="class-for-any-caption py-5 mt-3" data-aos="fade-left">
+      <div className="class-for-any-caption py-5 mt-3">
         <h1>
           Available Appointment on{" "}
           <span className="color">{date.toDateString()}</span>
@@ -70,7 +70,7 @@ const BookingAppointment = ({ date }) => {
       <div className="container marginBottom">
         <div className="row">
           {BookingAppointment.map((booking) => (
-            <BookingCard booking={booking}></BookingCard>
+            <BookingCard booking={booking} date={date}></BookingCard>
           ))}
         </div>
       </div>
