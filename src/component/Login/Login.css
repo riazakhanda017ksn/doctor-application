@@ -1,0 +1,240 @@
+.sign-in {
+  background-size: cover;
+  padding: 310px 0;
+  background-position: center 40%;
+  position: relative;
+  text-align: center;
+}
+.sign-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #d41655, #1307074f) !important;
+  width: 100%;
+  height: 100%;
+}
+/* .need-bg {
+  background: url(/static/media/freestocks-_3Q3tsJ01nc-unsplash.f17c9378.jpg) no-repeat;
+  background-size: cover;
+  padding: 56px 0;
+  background-position: center 40%;
+  position: relative;
+  text-align: center;
+}
+.need-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #d41655, #1307074f) !important;
+  width: 100%;
+  height: 100%;
+} */
+/* .google-sign-in button {
+  position: relative;
+}
+.google-sign-in button {
+  position: relative;
+  border: none;
+  padding: 16px 77px;
+  border-radius: 7px;
+} */
+.sign-in {
+  position: relative;
+}
+
+.google-sign-in {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+.google-sign-in {
+  position: relative;
+  display: flex;
+}
+
+.google-sign-in {
+  position: relative;
+  display: flex;
+  background: #fafafa03;
+  /* padding: 20px; */
+  border-radius: 100px;
+  border: 2px solid #ddd;
+  margin-top: 57px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.google-sign-in:hover {
+  position: relative;
+  display: flex;
+  background: #fafafa03;
+  /* padding: 20px; */
+  border-radius: 100px;
+  border: 2px solid rgb(48, 37, 37);
+  margin-top: 57px;
+  cursor: pointer;
+}
+.logo span {
+  position: relative;
+  font-size: 40px;
+}
+.logo span {
+  position: relative;
+  font-size: 41px;
+  padding: 10px;
+  color: white;
+  margin-right: 26px;
+}
+.title h3 {
+  margin-top: 11px;
+  color: #fafafa;
+}
+.need-flex {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+.email-with-password input {
+  width: 100%;
+}
+
+.email-with-password {
+  padding-left: 43px;
+  padding: 124px 0;
+  margin: 0 38px;
+  position: relative;
+  top: 138px;
+}
+.email-with-password input {
+  margin-top: 20px;
+  padding: 13px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+.email-with-password input:focus {
+  margin-top: 20px;
+  padding: 13px;
+  outline: none;
+  border: 1px solid rgb(255, 0, 64);
+  border-radius: 25px;
+}
+
+.email-with-password button {
+  outline: none;
+  border: none;
+  text-align: left;
+  margin: 18px 0;
+  padding: 15px 59px;
+  border: 2px solid #d80041;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #d80041;
+  transition: 0.3s ease-in-out;
+  transform-origin: top center;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+.email-with-password button:hover {
+  outline: none;
+  border: none;
+  text-align: left;
+  margin: 18px 0;
+  padding: 15px 59px;
+  background: #d80041;
+  border: 2px solid #d80041;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.need-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.need-a-caption p {
+  font-size: 15px;
+  color: #444444;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.create-an-account p {
+  font-size: 15px;
+  color: #444444;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.create-an-account p {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: rgb(189, 3, 96);
+  border-bottom: 1px solid rgb(187, 0, 72);
+}
+.position-need {
+  position: relative;
+  top: 22px;
+}
+.navbar-section ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 17px;
+  transition: 0.3s ease-in-out;
+  padding: 11px 8px;
+  position: relative;
+  top: 0px;
+}
+
+@media screen and (max-width: 440px) {
+  .title h3 {
+    margin-top: 11px;
+    color: #fafafa;
+    font-size: 18px;
+    line-height: 39px;
+    position: relative;
+    right: 16px;
+  }
+  .logo span {
+    position: relative;
+    font-size: 28px;
+    padding: 10px;
+    color: white;
+    margin-left: 1px !important;
+    line-height: 58px;
+  }
+  .create-an-account p {
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: rgb(189, 3, 96);
+    border-bottom: 1px solid rgb(187, 0, 72);
+  }
+  .caption p {
+    font-size: 12px;
+    color: #444444;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .navbar-section ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 10px;
+    transition: 0.3s ease-in-out;
+    padding: 11px 8px;
+    position: relative;
+    top: 0px;
+  }
+
+  .email-with-password {
+    padding-left: 43px;
+    padding: 124px 0;
+    margin: 0 38px;
+    position: relative;
+    top: 0px !important;
+  }
+}

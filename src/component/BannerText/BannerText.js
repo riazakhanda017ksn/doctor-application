@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BannerText.css";
 
 const BannerText = () => {
@@ -22,7 +23,9 @@ const BannerText = () => {
                     nobis ducimus ut aperiam, soluta culpa odio amet ? <br /> Id
                     unde recusandae consectetur.
                   </p>
-                  <button>Get Appointment </button>
+                  <Link to="appointment">
+                    <button>Get Appointment </button>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4"></div>
@@ -42,7 +45,9 @@ const BannerText = () => {
                     nobis ducimus ut aperiam, soluta culpa odio amet ? <br /> Id
                     unde recusandae consectetur.
                   </p>
-                  <button>Get Appointment </button>
+                  <Link to="appointment">
+                    <button>Get Appointment </button>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4"></div>
@@ -62,7 +67,9 @@ const BannerText = () => {
                     nobis ducimus ut aperiam, soluta culpa odio amet ? <br /> Id
                     unde recusandae consectetur.
                   </p>
-                  <button>Get Appointment </button>
+                  <Link to="appointment">
+                    <button>Get Appointment </button>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4"></div>

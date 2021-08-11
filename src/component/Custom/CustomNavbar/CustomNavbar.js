@@ -2,9 +2,8 @@ import { faPhone, faSearch, faUserMd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
-const Navbar = () => {
+const CustomNavbar = () => {
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
     if (window.scrollY > 40) {
@@ -68,9 +67,6 @@ const Navbar = () => {
             <li>
               <Link to="/">Dashboard</Link>
             </li>
-            <li>
-              <Link to="/login">Log In</Link>
-            </li>
           </ul>
           <div class="header-info d-flex align-items-center">
             <div class="header-search">
@@ -103,4 +99,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default CustomNavbar;

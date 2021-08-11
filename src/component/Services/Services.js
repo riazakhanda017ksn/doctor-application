@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Services.css";
 
 const Services = (props) => {
@@ -12,7 +13,9 @@ const Services = (props) => {
         <h3>{name}</h3>
         <p>{about}</p>
         <div className="button">
-          <button>Get Appointment</button>
+          <Link to="/appointment">
+            <button>Get Appointment</button>
+          </Link>
         </div>
       </div>
     </div>
