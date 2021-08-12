@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import "./AppointmentForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCross, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { UserContext } from "../../../App";
 
 const customStyles = {
   content: {
@@ -20,13 +21,42 @@ Modal.setAppElement("#root");
 
 const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
   ///
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  //
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {
+    const userData = {
+      name: data.name,
+      number: data.number,
+      email: data.email,
+      doctor: data.selectionDoctor,
+      date: date,
+      appointmentDate: data.appointmentDate,
+      created: new Date(),
+    };
+    console.log("userData", userData);
+
+    fetch("http://localhost:5055/addAppointment", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(userData),
+    })
+      .then((res) => res.json())
+      .then((success) => {
+        if (success) {
+          alert("sorry your data could not send");
+        } else {
+          closeModal();
+          alert("your data has been passed...!!!");
+        }
+      });
+  };
   return (
     <div>
       <Modal
@@ -46,10 +76,12 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         <div className="modal-form">
           <form onSubmit={handleSubmit(onSubmit)}>
             <select class="form-select" {...register("selectionDoctor")}>
-              <option selected>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option>Open this select the doctors</option>
+              <option>Doctor Marlo</option>
+              <option>Doctor Alex</option>
+              <option>Doctor Ema Watson</option>
+              <option>Doctor Mobin Khan</option>
+              <option>Doctor Sayem Khan</option>
             </select>
             <input {...register("name")} required placeholder="Name" />
             <input
@@ -61,9 +93,10 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
               {...register("email", { required: true })}
               required
               placeholder="Email"
+              value={loggedInUser.email}
             />
             <input
-              {...register("date", { required: true })}
+              {...register("appointmentDate", { required: true })}
               required
               value={date.toDateString()}
             />

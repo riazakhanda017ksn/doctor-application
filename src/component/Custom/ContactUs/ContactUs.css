@@ -1,0 +1,46 @@
+.contact-bg-one{
+    background:url(../../../Images/slider-dentist-02.jpg)no-repeat fixed top center;
+    position: relative;
+    background-size:cover;
+ padding-bottom: 100px;
+}
+.contact-bg-one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.637);
+}
+.contact-bg-two{
+    background:url(../../../Images/slider-dentist-03.jpg)no-repeat fixed top center;
+    position: relative;
+    background-size:cover;
+    padding-bottom: 60px;
+}
+.contact-bg-two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #000000b0, #0000004d);
+}
+.contact-bg-three{
+    background:url(../../../Images/slider-dentist-04.jpg)no-repeat fixed top center;
+    position: relative;
+    background-size:cover;
+ padding-bottom: 60px;
+}
+.contact-bg-three::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.719);
+}
+

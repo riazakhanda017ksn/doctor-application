@@ -1,7 +1,8 @@
 import { faPhone, faSearch, faUserMd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../../App";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     }
   };
   window.addEventListener("scroll", changeBackground);
-
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
     //////////////////////
     <nav
@@ -63,13 +64,17 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
-            <li>
-              <Link to="/login">Log In</Link>
+            <li onClick={() => setLoggedInUser({})}>
+              {loggedInUser?.email ? (
+                <Link to="/">Log Out</Link>
+              ) : (
+                <Link to="/login">Log In</Link>
+              )}
             </li>
           </ul>
           <div class="header-info d-flex align-items-center">

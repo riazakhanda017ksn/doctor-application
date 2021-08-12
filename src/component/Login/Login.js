@@ -167,8 +167,8 @@ const Login = () => {
   };
   console.log(user.displayName);
   return (
-    <>
-      <div className="row">
+    <div className="need-overflow">
+      <div className="row ">
         <div className="col-lg-6">
           <div className="need-bg">
             <div className="email-with-password">
@@ -223,8 +223,8 @@ const Login = () => {
               </form>
               {newUser ? (
                 <div className="need-flex">
-                  <div className="need-a-caption">
-                    <p> already Have an Account</p>
+                  <div className="caption">
+                    <p className="text"> already Have an Account</p>
                   </div>
                   <div className="create-an-account">
                     <p onClick={() => setNewUser(!newUser)}>Log In </p>
@@ -232,8 +232,8 @@ const Login = () => {
                 </div>
               ) : (
                 <div className="need-flex">
-                  <div className="need-a-caption">
-                    <p>If you are new to the site </p>
+                  <div className="caption">
+                    <p className="text">If you are new to the site </p>
                   </div>
                   <div className="create-an-account">
                     <p onClick={() => setNewUser(!newUser)}>
@@ -267,7 +267,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
