@@ -5,7 +5,7 @@ import AppoinmentManagementDetails from "../AppoinmentManagementDetails/Appoinme
 const AppoinmentManagement = () => {
   const [showPatients, setShowPatients] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/doctorsItem")
+    fetch("https://mighty-savannah-93883.herokuapp.com/doctorsItem")
       .then((res) => res.json())
       .then((data) => setShowPatients(data));
   }, []);

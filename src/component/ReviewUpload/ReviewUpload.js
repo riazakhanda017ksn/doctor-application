@@ -25,7 +25,7 @@ const ReviewUpload = () => {
       message: data.message,
     };
     console.log("eventData", eventData);
-    fetch("http://localhost:5055/peopleReview", {
+    fetch("https://mighty-savannah-93883.herokuapp.com/peopleReview", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(eventData),

@@ -20,7 +20,7 @@ const Admin = () => {
       number: data.number,
       country: data.country,
     };
-    fetch("http://localhost:5055/addAdmin", {
+    fetch("https://mighty-savannah-93883.herokuapp.com/addAdmin", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(adminData),

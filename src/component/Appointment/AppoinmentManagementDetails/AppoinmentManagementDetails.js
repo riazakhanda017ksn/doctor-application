@@ -8,7 +8,7 @@ const AppoinmentManagementDetails = (props) => {
   const { name, email, status, _id } = props.patients;
   //
   const updateStatus = (value, id) => {
-    fetch(`http://localhost:5055/updateStatus/${id}`, {
+    fetch(`https://mighty-savannah-93883.herokuapp.com/updateStatus/${id}`, {
       method: "PATCH",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ value }),
@@ -30,9 +30,12 @@ const AppoinmentManagementDetails = (props) => {
   /////delete appointment
 
   const deleteAppointment = (id) => {
-    fetch(`http://localhost:5055/deleteAppointment/${id}`, {
-      method: "DELETE",
-    }).then((result) => {
+    fetch(
+      `https://mighty-savannah-93883.herokuapp.com/deleteAppointment/${id}`,
+      {
+        method: "DELETE",
+      }
+    ).then((result) => {
       if (result) {
         swal(
           "Appointment has been deleted!",

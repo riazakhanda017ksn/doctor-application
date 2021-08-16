@@ -6,7 +6,7 @@ import ShowDoctorDetails from "../ShowDoctorDetails/ShowDoctorDetails";
 const ShowDoctor = () => {
   const [showDoctors, setShowDoctors] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/doctorDb")
+    fetch("https://mighty-savannah-93883.herokuapp.com/doctorDb")
       .then((res) => res.json())
       .then((data) => setShowDoctors(data));
   }, [0]);

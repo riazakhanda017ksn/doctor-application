@@ -19,22 +19,22 @@ const DashboardActivities = () => {
   const [review, setReview] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5055/doctorsItem")
+    fetch("https://mighty-savannah-93883.herokuapp.com/doctorsItem")
       .then((res) => res.json())
       .then((data) => setPatient(data));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5055/doctorDb")
+    fetch("https://mighty-savannah-93883.herokuapp.com/doctorDb")
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5055/admins")
+    fetch("https://mighty-savannah-93883.herokuapp.com/admins")
       .then((res) => res.json())
       .then((data) => setAdmin(data));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:5055/reviews")
+    fetch("https://mighty-savannah-93883.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);

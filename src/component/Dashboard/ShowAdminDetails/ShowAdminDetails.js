@@ -6,7 +6,7 @@ const ShowAdminDetails = (props) => {
   const { name, email, _id } = props.adminItems;
 
   const deleteEvent = (id) => {
-    fetch(`http://localhost:5055/deleteAdmin/${id}`, {
+    fetch(`https://mighty-savannah-93883.herokuapp.com/deleteAdmin/${id}`, {
       method: "DELETE",
     }).then((result) => {
       if (result) {

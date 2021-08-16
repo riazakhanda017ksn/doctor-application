@@ -14,7 +14,7 @@ const DashboardCalender = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5055/appointmentsByDate", {
+    fetch("https://mighty-savannah-93883.herokuapp.com/appointmentsByDate", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ date: selectedDate, email: loggedInUser.email }),

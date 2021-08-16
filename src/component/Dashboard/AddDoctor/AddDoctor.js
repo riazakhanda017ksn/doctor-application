@@ -25,7 +25,7 @@ const AddDoctor = () => {
       imageURL: imageURL,
     };
     console.log("eventData", eventData);
-    fetch("http://localhost:5055/addDoctor", {
+    fetch("https://mighty-savannah-93883.herokuapp.com/addDoctor", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(eventData),
