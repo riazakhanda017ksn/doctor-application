@@ -1,0 +1,73 @@
+.patient {
+    padding: 20px 30px;
+    background: #6274df;
+}
+
+.patient h3 {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #ffff;
+    padding-bottom: 30px;
+}
+
+span.logo-customize {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.patient {
+    padding: 20px 30px;
+    background: #6274df;
+    border-radius: 15px;
+}
+
+
+.doctors{
+    padding: 20px 30px;
+    background: #ff1650;
+    border-radius: 15px;
+}
+.admin{
+    padding: 20px 30px;
+    background: rgb(255, 201, 65);
+    border-radius: 15px;
+}
+.admin{
+    padding: 20px 30px;
+    background: rgb(255, 201, 65);
+    border-radius: 15px;
+}
+.admin h3{
+    font-size: 18px;
+    padding: 10px 0;
+    color: #ffff;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.doctors h3{
+    font-size: 18px;
+    padding: 10px 0;
+    color: #ffff;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.review{
+    padding: 20px 30px;
+    background: #ff1650;
+    border-radius: 15px;
+    border: 2px solid #ff1650;
+    color:#ffffff
+}
+.review h3{
+    padding: 20px 30px;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #ffffff;
+    padding-bottom: 30px;
+    text-align: center;
+}
+

@@ -1,0 +1,6 @@
+.need-background {
+    background: url(../../../Images/12dashboard.gif)no-repeat fixed center;
+    height: 100Vh;
+    background-size: cover;
+    position: relative;
+}

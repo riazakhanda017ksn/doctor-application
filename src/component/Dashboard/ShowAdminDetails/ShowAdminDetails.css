@@ -1,0 +1,29 @@
+td.customize {
+    border: 1px solid #ff2626;
+    width: 117px;
+    padding: 10px 4px;
+    margin-top: 10px!important;
+    display: inline-block;
+    color: #d20000;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+td.customize:hover {
+   background: #ff3e3e;
+   color: aliceblue;
+}
+
+@media only screen and (max-width: 990px)  {
+    td.customize {
+        border: 1px solid #ff2626;
+        width: 80px!important;
+        padding: 10px 4px;
+        margin-top: 10px!important;
+        display: inline-block;
+        color: #d20000;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        font-size: 12px;
+    }
+}

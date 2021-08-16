@@ -1,0 +1,12 @@
+
+
+.new-customization ul li a{
+color: #FFF!important;
+}
+.new-customization ul li a:hover{
+color: #FFF!important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.sticky.bg.fixed-top {
+    background: #82C5F8;
+}

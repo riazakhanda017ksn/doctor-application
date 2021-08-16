@@ -342,6 +342,7 @@ button.customization-button {
   position: relative;
   top: -8px;
   color: #ffffff;
+  animation: logo 1s ease-in infinite alternate;
 
 }
 100%{

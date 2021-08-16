@@ -1,0 +1,69 @@
+
+@media only screen and (max-width: 700px)  {
+.table-manage td {
+    font-size: 7px;
+}}
+
+ul.menubar {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+ul.menubar li {
+	padding: 0 3px;
+}
+
+
+ul.menubar li a {
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+	color: #111;
+	transition: .4s;
+}
+
+ul.menubar li a:hover{
+	color:#606060
+}
+
+ul.menubar {position: relative;}
+
+
+
+ul.menubar li:hover ul{
+opacity:1;
+visibility: visible;
+top:175%;
+transform-origin: top center;
+
+}
+
+ul.menubar li ul li {
+    border-top: 1px solid rgb(238, 238, 238);
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+ul.menubar li ul li a {
+	font-size: 14px;
+	margin-bottom: 11px;
+	display: inline-block;
+	font-weight: 400;
+	
+}
+ul.menubar li ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: -57%!important;
+    width: 250px;
+    left: -78px;
+    background-color: #FFF;
+    padding: 30px;
+    transition: .4s ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+}

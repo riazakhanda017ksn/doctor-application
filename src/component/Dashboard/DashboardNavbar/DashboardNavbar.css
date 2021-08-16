@@ -1,0 +1,29 @@
+.cross a {
+    font-size: 31px;
+    color: #f35134;
+    transition: .3s ease-in-out;
+}
+.cross a:hover {
+    font-size: 31px;
+    color: #d62000;
+    position: relative;
+    
+}
+a.navbar-brand h3 {
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    top: 19px;
+}
+.new-customization ul li a{
+    color: #FFF!important;
+    }
+    .new-customization ul li a:hover{
+    color: #FFF!important;
+    }
+
+
+    a.navbar-brand h3 a {
+        text-decoration: none;
+        color: #ffff;
+    }

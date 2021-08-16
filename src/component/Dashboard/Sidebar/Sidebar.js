@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBlog,
   faBookDead,
+  faCalendar,
   faCameraRetro,
   faComment,
+  faComments,
   faEdit,
   faHome,
   faShoppingCart,
@@ -24,7 +26,16 @@ import { faUserMd } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-
+  const [isAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    fetch("http://localhost:5055/isAdmin", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email: loggedInUser.email }),
+    })
+      .then((res) => res.json())
+      .then((data) => setIsAdmin(data));
+  }, []);
   return (
     <div className="side-bar">
       <span className="customize  position-relative">
@@ -54,58 +65,67 @@ const Sidebar = () => {
               {" "}
               <FontAwesomeIcon icon={faDashcube} />
             </span>{" "}
-            <Link to="/">Dashboard</Link>
+            <Link to="/dashboardActivities">Dashboard</Link>
           </li>
 
           <>
-            <li>
-              {" "}
-              <span className="mr-3">
-                <FontAwesomeIcon icon={faEdit} />{" "}
-              </span>{" "}
-              <Link to="/">Manage Order</Link>
-            </li>
-            <li>
-              {" "}
-              <span className="mr-3">
-                <FontAwesomeIcon icon={faServicestack} />{" "}
-              </span>{" "}
-              <Link to="/inventory">Add Product</Link>
-            </li>
-            <li>
-              {" "}
-              <span className="mr-3">
-                {" "}
-                <FontAwesomeIcon icon={faUser} />{" "}
-              </span>{" "}
-              <Link to="/">Admin</Link>
-            </li>
+            {isAdmin && (
+              <>
+                <li>
+                  {" "}
+                  <span className="mr-3">
+                    <FontAwesomeIcon icon={faEdit} />{" "}
+                  </span>{" "}
+                  <Link to="/appointment_management">
+                    Appointment Management
+                  </Link>
+                </li>
 
-            <li>
-              {" "}
-              <span className="mr-3">
-                {" "}
-                <FontAwesomeIcon icon={faUserPlus} />{" "}
-              </span>{" "}
-              <Link to="/">Add Admin</Link>
-            </li>
+                <li>
+                  {" "}
+                  <span className="mr-3">
+                    {" "}
+                    <FontAwesomeIcon icon={faUser} />{" "}
+                  </span>{" "}
+                  <Link to="/admin">Admin</Link>
+                </li>
+
+                <li>
+                  {" "}
+                  <span className="mr-3">
+                    {" "}
+                    <FontAwesomeIcon icon={faUserPlus} />{" "}
+                  </span>{" "}
+                  <Link to="/add-admin">Add Admin</Link>
+                </li>
+                <li>
+                  {" "}
+                  <span className="mr-3">
+                    {" "}
+                    <FontAwesomeIcon icon={faUsers} />
+                  </span>{" "}
+                  <Link to="/add-doctor">Add Doctor</Link>
+                </li>
+              </>
+            )}
           </>
 
           <li>
             {" "}
             <span className="mr-3">
               {" "}
-              <FontAwesomeIcon icon={faBlog} />
+              <FontAwesomeIcon icon={faCalendar} />
             </span>{" "}
-            <Link to="/">My Order</Link>
+            <Link to="/myAppointment">Appointment</Link>
           </li>
+
           <li>
             {" "}
             <span className="mr-3">
               {" "}
-              <FontAwesomeIcon icon={faBlog} />
+              <FontAwesomeIcon icon={faComments} />
             </span>{" "}
-            <Link to="/">Blog</Link>
+            <Link to="/review">Add Review</Link>
           </li>
           <li>
             {" "}

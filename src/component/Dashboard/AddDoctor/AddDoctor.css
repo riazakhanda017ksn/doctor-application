@@ -1,0 +1,107 @@
+
+.add-doctor-section{animation: img 2s ease-in infinite alternate;}
+
+
+ @keyframes img{
+    
+  0%, 50%{
+    position: relative;
+    top: 9px;
+    color: #ffffff;
+  
+  }
+  100%{
+    position: relative;
+      top: -5px;
+      color: #fff;
+    
+  } 
+}
+
+.add-doctor input {
+    display: block;
+    width: 100%;
+    margin: 19px 0;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 14px 10px;
+}
+.add-doctor input:focus{
+  
+    border: 1px solid rgb(255, 56, 56);
+
+}
+
+.add-doctor {
+    padding: 100px 22px;
+}
+
+.need-customization input {
+    padding: 6px;
+    margin-bottom: 46px;
+}
+.need-customization input:focus{
+    box-shadow: none;
+    border: 1px solid rgb(255, 56, 56);
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+    cursor: pointer;
+    color: #767676;
+}
+
+
+
+
+
+
+input.bg-change {
+    border: none;
+    color: #fff;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.need-flex-between-them {
+    display: flex;
+}
+
+.image-upload img {
+    height: 50px;
+    position: relative;
+    bottom: 8px;
+}
+
+.text-edit-for-color {
+    color: #767676;
+    position: relative;
+    top: 3px;
+    padding: 0 9px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+input.bg-change {
+    transform: translate(8px, -51px);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.add-doctor button {
+    transform: translate(0px, -21px);
+    padding: 17px 56px;
+    font-size: 15px;
+    background: #F73959;
+    color: #fff;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    border: 2px solid #F73959;
+}
+.add-doctor button:hover {
+    border: 2px solid #F73959;
+    color: #F73959;
+    background: none;
+}

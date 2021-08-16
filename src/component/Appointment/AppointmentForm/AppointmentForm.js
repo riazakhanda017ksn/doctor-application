@@ -5,6 +5,7 @@ import "./AppointmentForm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCross, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { UserContext } from "../../../App";
+import swal from "sweetalert";
 
 const customStyles = {
   content: {
@@ -28,9 +29,10 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
     handleSubmit,
     watch,
     formState: { errors },
+    reset,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
     const userData = {
       name: data.name,
       number: data.number,
@@ -50,12 +52,19 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
       .then((res) => res.json())
       .then((success) => {
         if (success) {
-          alert("sorry your data could not send");
+          swal("Something is wrong", "Please try again", "danger");
         } else {
           closeModal();
-          alert("your data has been passed...!!!");
+          swal(
+            "Thanks For your appointment !",
+            "Keep checking back with us",
+            "success"
+          );
         }
       });
+    e.preventDefault();
+    e.target.reset();
+    reset();
   };
   return (
     <div>
